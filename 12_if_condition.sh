@@ -12,3 +12,11 @@ else
 	echo "you are only allowed to dring colddrink"
 
 fi
+
+#-eq->equal
+#-gt->greater than
+#-lt->less than
+#-ge->greater than equal to
+#-le->less thna equal to 
+
+
