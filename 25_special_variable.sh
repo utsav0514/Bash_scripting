@@ -1,15 +1,24 @@
 #!/bin/bash
 
 function special_variable () {
+    echo "The total arguments passed in the function is $#"
+    
+    for arg in "$@"
+    do
+        echo "Arg: $arg"
+    done
 
-	echo "some mathematical solution"
-	read -p "Enter the value of a " a
-	read -p "Enter the value of b " b
-	read -p "Enter the value of c " c
+    echo "The arguments together are: $*"
 
-	(( sum = $a + $b + $c ))
-	echo "sum:$sum"
-	echo "The numbe of argument in this function $#"
+    # Run a command to show exit status example
+    ls /nonexistentdirectory  # This will fail, just for demonstration
+
+    echo "Exit status of last command: $?"
+
+    echo "The process id of the current shell is $$"
+    echo "The function name is $FUNCNAME"
+    echo "The hostname of the machine is $HOSTNAME"
 }
 
-special_variable 
+special_variable utsav sagar ujwal allen
+
