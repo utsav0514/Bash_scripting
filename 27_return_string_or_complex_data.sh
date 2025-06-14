@@ -16,7 +16,7 @@ greet_2 "Utsav"
 
 <<comment
  Here both function will return output as Hello,Utsav but
-the difference is that one the first function used the 
+the difference is that the first function uses the 
 command subsitution method to store the output for the 
 future use.
 
